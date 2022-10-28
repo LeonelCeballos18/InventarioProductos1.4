@@ -3,15 +3,14 @@ class Inventario{
         this.primero = null;
     }
 
-    agregar(nuevo){
+    agregar(nuevo, code){
         if (this.primero==null)
             this.primero=nuevo;
         else{
             let temp=this.primero;
-        while (temp.siguiente!=null)
-            temp=temp.siguiente;
-            temp.siguiente=nuevo;
-            nuevo.anterior = temp;
+            while (temp.siguiente!=null){
+                temp=temp.siguiente;
+            } 
         }
     }
 

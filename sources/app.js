@@ -13,18 +13,6 @@ btnAgregar.addEventListener('click', ()=>{
     alert("Producto agregado");
 })
 
-const btnInsertar = document.getElementById('add2');
-btnInsertar.addEventListener('click', ()=>{
-    let code = document.getElementById('codigo2').value;
-    let name = document.getElementById('nombre2').value;
-    let amount = document.getElementById('cantidad2').value;
-    let price = document.getElementById('costo2').value;
-    let posicion = document.getElementById('posicion').value;
-    let product = new Producto(code, name, amount, price);
-    inventory.agregar(product, posicion);
-    alert("Producto agregado");
-})
-
 const btnEliminar = document.getElementById('delete');
 btnEliminar.addEventListener('click', ()=>{
     let code = document.getElementById('eliminacion').value;
