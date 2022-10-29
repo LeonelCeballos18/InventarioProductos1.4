@@ -6,6 +6,7 @@ class Producto{
         this.precio = precio;
         this.siguiente = null;
         this.anterior = null;
+        this.ultimo = null;
     }
 
     getCodigo(){
